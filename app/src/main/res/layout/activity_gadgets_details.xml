@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GadgetsDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gadgets"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:layout_height="150dp"
+        android:layout_width="400dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+               android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:src="@drawable/ipod" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:paddingBottom="36dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--   <com.smarteist.autoimageslider.SliderView
+                   android:id="@+id/prod_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="400dp" />-->
+
+            <TextView
+                android:id="@+id/prod_det_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:text="NEX-G"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/prod_det_sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 800"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#f16b45" />
+
+
+                <TextView
+                    android:id="@+id/prod_det_mp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_mp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    />
+
+                <TextView
+                    android:id="@+id/prod_det_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20% off"
+                    android:visibility="visible"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blue" />
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#977A84"
+                app:cardCornerRadius="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fce6dc"
+                    android:padding="3dp"
+                    android:text="Refurbished Ipod"
+                    android:textColor="#BF360C" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/prod_det_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textColor="@color/gray"
+                android:textAlignment="textStart"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/prod_det_sub_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text=" Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textColor="@color/gray"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/prod_det_del_chrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charge: ₹ 20"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/prod_det_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:background="@color/gray"
+                android:numStars="5"
+                android:rating="2" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/prod_det_chip_group_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                app:chipSpacing="25dp">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/prod_det_chip_group_rom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                app:chipSpacing="25dp">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="64 GB" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="128 GB" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/prod_det_chip_group_ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                app:chipSpacing="25dp">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 GB" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 GB" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <!--         <com.google.android.material.textfield.TextInputLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:focusable="true"
+                         android:focusableInTouchMode="true"
+                         android:textColorHint="@color/primaryDarkColor"
+                         android:layout_marginTop="@dimen/activity_horizontal_margin"
+                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                         <com.google.android.material.textfield.TextInputEditText
+                             android:id="@+id/prod_det_pincode"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textColor="@color/black"
+                             android:hint="Pincode"/>
+
+                     </com.google.android.material.textfield.TextInputLayout>-->
+
+            <TextView
+                android:id="@+id/prod_det_deatiled_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:background="@color/llbg"
+                android:text="Line 1,\nLine 2,\nLine 3,\nLine 4,\nLine 5,\nLine 6,\nLine 7"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="add to cart"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

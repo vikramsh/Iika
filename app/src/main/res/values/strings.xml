@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Iika</string>
+
+
+    <!-- Strings for On Boarding Screen -->
+
+    <!--Titles-->
+    <string name="first_slide_title">Audio Accessories</string>
+    <string name="second_slide_title">Smart Device</string>
+    <string name="third_slide_title">Wearable Device</string>
+    <string name="fourth_slide_title">Sit Back And Enjoy</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">"The Question is not what you look at, but what you see."</string>
+    <string name="second_slide_desc">"The Question is not what you look at, but what you see."</string>
+    <string name="third_slide_desc">"The Question is not what you look at, but what you see."</string>
+    <string name="fourth_slide_desc">"The Question is not what you look at, but what you see".</string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+
+    <!-- General Menu Items -->
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="loginviagoogle"> Sign In via Google </string>
+    <string name="loginviafacebook"> Sign In via Facebook</string>
+    <string name="firstname"> First Name</string>
+    <string name="lastname"> Last Name</string>
+    <string name="email">Email Id</string>
+    <string name="phone">Mobile Number</string>
+    <string name="enter_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="address">Address</string>
+    <string name="confirmaddress">Confirm Address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="changeaddress">Change Address</string>
+    <string name="forgot_password">Forgot password?</string>
+
+
+    <string name="quote">"The Question is not what you look at,</string>
+    <string name="quotes">but what you see."</string>
+
+    <string name="phone_number">+91 XXXXXXXXXX</string>
+    <string name="mail_id">it@acceglobalgroup.com</string>
+    <string name="test_mp"><strike>₹ 1000</strike></string>
+    <string name="test_m"><strike>₹ 1500</strike></string>
+    <string name="test_ms"><strike>₹ 3000</strike></string>
+    <string name="offer">Special Offer</string>
+    <string name="company">Company</string>
+    <string name="aboutUs"> -About Us</string>
+    <string name="contactus"> -Contact Us</string>
+    <string name="privacyPolicy"> -Privacy Policy</string>
+    <string name="termCondition"><![CDATA[Terms & Conditions]]></string>
+    <string name="myAddress"> -My Address</string>
+    <string name="myOrder"> -My Order</string>
+    <string name="myAccount"> -My Account</string>
+    <string name="myprofile">My Profile</string>
+    <string name="menu_home">Home</string>
+    <string name="change_address">Change Address</string>
+
+</resources>
